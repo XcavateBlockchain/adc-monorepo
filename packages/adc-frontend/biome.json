@@ -1,0 +1,75 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"ignore": ["**/node_modules", "**/dist", "**/build", "**/public", "**/.turbo", "**/.next"]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentWidth": 2,
+		"lineWidth": 95,
+		"indentStyle": "tab",
+		"ignore": ["**/node_modules", "**/dist", "**/build", "**/public", "**/.turbo", "**/.next"]
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"a11y": {
+				"noSvgWithoutTitle": "off",
+				"useButtonType": "off",
+				"useAltText": "off",
+				"useKeyWithClickEvents": "off",
+				"useSemanticElements": "off",
+				"noLabelWithoutControl": "off"
+			},
+			"correctness": {
+				"noUnusedVariables": "warn",
+				"useExhaustiveDependencies": "warn"
+			},
+			"complexity": {
+				"noBannedTypes": "off"
+			},
+			"style": {
+				"useImportType": "warn",
+				"noParameterAssign": "off"
+			},
+			"security": {
+				"noDangerouslySetInnerHtml": "off"
+			},
+			"suspicious": {
+				"noAssignInExpressions": "off",
+				"noArrayIndexKey": "off",
+				"noExplicitAny": "off"
+			},
+
+			"nursery": {
+				"useSortedClasses": {
+					"level": "warn",
+					"options": {
+						"attributes": ["classList"],
+						"functions": ["clsx", "cva", "tw"]
+					}
+				}
+			}
+		},
+		"ignore": ["**/node_modules", "**/dist", "**/build", "**/public", "**/.turbo", "**/.next"]
+	},
+	"javascript": {
+		"formatter": {
+			"enabled": true,
+			"lineWidth": 95,
+			"bracketSpacing": true,
+			"indentWidth": 2,
+			"quoteStyle": "double"
+		}
+	}
+}

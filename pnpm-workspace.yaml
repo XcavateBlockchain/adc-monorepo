@@ -1,0 +1,4 @@
+packages:
+  - 'packages/assetdidcomm-client'
+  - 'packages/adc-frontend'
+  - 'packages/adc-messaging-module/wasm'

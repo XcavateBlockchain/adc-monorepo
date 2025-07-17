@@ -1,0 +1,9 @@
+{
+  "files": [],
+  "include": [],
+  "references": [
+    { "path": "packages/adc-messaging-module/wasm" },
+    { "path": "packages/assetdidcomm-client" },
+    { "path": "packages/adc-frontend" }
+  ]
+}

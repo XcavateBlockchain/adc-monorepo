@@ -1,0 +1,14 @@
+{
+  "name": "new-assetdidcomm-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+ "scripts": {
+    "build": "pnpm -r --stream build",
+    "dev": "pnpm build && pnpm --filter adc-frontend dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.1"
+}

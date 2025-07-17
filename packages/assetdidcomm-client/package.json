@@ -1,0 +1,32 @@
+{
+  "name": "assetdidcomm-client",
+  "version": "1.0.0",
+  "description": "SDK for AssetDIDComm operations.",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:js": "tsup src/index.ts --format esm,cjs",
+    "build:dts": "tsc --project tsconfig.build.json",
+    "build": "pnpm run clean && pnpm run build:js && pnpm run build:dts"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "didcomm-module-wasm": "workspace:*",
+    "@kiltprotocol/sdk-js": "^1.0.0",
+    "@polkadot/api": "^16.3.1",
+    "@polkadot/util": "13.5.3",
+    "jose": "^6.0.11",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.8.3",
+    "@types/node": "^22.15.29",
+    "@types/uuid": "^10.0.0"
+  }
+}
